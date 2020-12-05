@@ -5,6 +5,7 @@ import slash from 'slash';
 export default defineConfig({
   routes: [
     { path: '/', component: '@/pages/index' },
+    { path: '/control', component: '@/pages/control' },
   ],
   externals(context: any, request: any, callback: any) {
     const isDev = process.env.NODE_ENV === 'development';
