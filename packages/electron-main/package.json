@@ -1,19 +1,16 @@
 {
-  "name": "electron-remote-control",
+  "name": "electron-main",
   "version": "0.0.1",
   "description": "",
   "main": "app/main/index.js",
   "scripts": {
-    "start": "electron .",
-    "start:render": "cd app/renderer/src/main && npm start"
+    "start": "electron ."
   },
-  "repository": "https://github.com/shenwl/electron-remote-control",
   "keywords": [],
   "author": "shenwl",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^11.0.3",
-    "lerna": "^3.22.1"
+    "electron": "^11.0.3"
   },
   "dependencies": {
     "electron-is-dev": "^1.2.0",
