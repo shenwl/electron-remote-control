@@ -10,7 +10,7 @@ export async function getScreenStream() {
     video: {
       mandatory: {
         chromeMediaSource: 'desktop',
-        chromeMediaSourceId: resources[0].id,
+        chromeMediaSourceId: resources[1].id,
         maxWidth: window.screen.width,
         maxHeight: window.screen.height,
       }
@@ -20,4 +20,14 @@ export async function getScreenStream() {
   }, (err: any) => {
     console.error(err);
   })
+}
+
+// 等比缩放鼠标点击坐标（DOM映射屏幕）
+export const scalarPosition = (x: number, y: number, video: HTMLVideoElement) => {
+  const newX = x * video.videoWidth / screen.width;
+  const newY = y * video.videoHeight / screen.height;
+  return {
+    x: newX,
+    y: newY,
+  }
 }
