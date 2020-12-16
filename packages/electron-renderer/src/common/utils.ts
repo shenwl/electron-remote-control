@@ -5,7 +5,7 @@ export const eventHub = new Event();
 
 export async function getScreenStream() {
   const resources = await desktopCapturer.getSources({ types: ['window', 'screen'] });
-  navigator.webkitGetUserMedia({
+  (navigator as any).webkitGetUserMedia({
     audio: false,
     video: {
       mandatory: {
@@ -31,3 +31,4 @@ export const scalarPosition = (x: number, y: number, video: HTMLVideoElement) =>
     y: newY,
   }
 }
+
