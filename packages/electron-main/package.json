@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "electron-is-dev": "^1.2.0",
-    "robotjs": "^0.6.0"
+    "robotjs": "^0.6.0",
+    "vkey": "^1.0.1"
   }
 }

@@ -2,6 +2,7 @@ const IPC_EVENTS = {
   LOGIN: 'login',
   CONTROL_STATE_CHANGE: 'control-state-change',
   CONTROL: 'control',
+  ROBOT: 'robot',
 }
 
 const CONTROL_TYPE = {
