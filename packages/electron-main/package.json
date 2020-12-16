@@ -10,7 +10,8 @@
   "author": "shenwl",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^11.0.3"
+    "electron": "^11.0.3",
+    "electron-rebuild": "^2.3.4"
   },
   "dependencies": {
     "electron-is-dev": "^1.2.0",
