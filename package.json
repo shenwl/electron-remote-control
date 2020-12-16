@@ -4,8 +4,8 @@
   "description": "",
   "main": "app/main/index.js",
   "scripts": {
-    "start": "electron .",
-    "start:render": "cd app/renderer/src/main && npm start"
+    "start": "cd packages/electron-main && npm start ",
+    "start:fe": "cd packages/electron-renderer && npm start"
   },
   "repository": "https://github.com/shenwl/electron-remote-control",
   "keywords": [],
